@@ -9,3 +9,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true })
 -- Center when searching
 vim.keymap.set("n", "n", "nzzzv", { noremap = true })
 vim.keymap.set("n", "N", "Nzzzv", { noremap = true })
+
+-- Move Highlighted Chunks
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { noremap = true })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true })
+
+vim.keymap.set("i", "<C-c>", "<Esc>", { noremap = true })
